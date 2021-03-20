@@ -1,0 +1,92 @@
+/* CSS for documenting the TestPattern enum */
+
+table.testpattern {
+    width: 16em;
+    height: 9em;
+    border: 2px solid #022;
+    text-align: center;
+    line-height: 9em;
+}
+
+table.alternating-lines tr td {
+    background: repeating-linear-gradient(0deg, #000, #fff 4px);
+}
+
+table.alternating-pixels tr td {
+    background: repeating-linear-gradient(90deg, #000, #fff 4px);
+}
+
+table.grayscale-ramp tr td {
+    background: linear-gradient(90deg, #000 0%, #fff 100%);
+}
+
+table.white-field tr td {
+    background-color: #fff;
+}
+
+table.color-bars tr, table.grey-bars tr {
+    height: 4.5em;
+}
+
+table.color-bars tr td, table.grey-bars tr td {
+    width: 2em;
+}
+
+table.color-bars tr td.bar0 { background-color: #fff; }
+table.color-bars tr td.bar1 { background-color: #ff0; }
+table.color-bars tr td.bar2 { background-color: #0ff; }
+table.color-bars tr td.bar3 { background-color: #0f0; }
+table.color-bars tr td.bar4 { background-color: #f00; }
+table.color-bars tr td.bar5 { background-color: #f0f; }
+table.color-bars tr td.bar6 { background-color: #00f; }
+table.color-bars tr td.bar7 { background-color: #000; }
+
+table.grey-bars tr td.bar0 { background-color: #fff; }
+table.grey-bars tr td.bar1 { background-color: #ccc; }
+table.grey-bars tr td.bar2 { background-color: #aaa; }
+table.grey-bars tr td.bar3 { background-color: #888; }
+table.grey-bars tr td.bar4 { background-color: #666; }
+table.grey-bars tr td.bar5 { background-color: #444; }
+table.grey-bars tr td.bar6 { background-color: #222; }
+table.grey-bars tr td.bar7 { background-color: #000; }
+
+div.aspect {
+    width: 16em;
+    text-align: center;
+    line-height: 9em;
+    height: 9em;
+    border: 2px solid #022;
+    background-color: #000;
+}
+
+div.aspect div {
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+div.aspect-1_33 div {
+    width: 10.666em;
+    height: 8em;
+}
+
+div.aspect-1_78 div {
+    width: 15em;
+    height: 8.427em;
+}
+
+div.aspect-1_85 div {
+    width: 15em;
+    height: 8.1em;
+}
+
+div.aspect-2_35 div {
+    width: 15em;
+    height: 6.38em;
+}
+
+div.crop div {
+    width: 15.5em;
+    height: 8.5em;
+}
