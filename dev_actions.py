@@ -4,18 +4,29 @@
 import subprocess
 import os
 import stat
+import sys
 
 _MODULE = "sistrum"
 
 def check():
     basedir = os.path.dirname(os.path.realpath(__file__))
 
+    e = subprocess.run(["black", "--check", _MODULE], cwd=basedir)
+    if e.returncode != 0:
+        sys.exit(e.returncode)
+
     # Update docs
-    subprocess.run(["make", "html"], cwd=os.path.join(basedir, "docs"))
+    e = subprocess.run(["make", "html"], cwd=os.path.join(basedir, "docs"))
+    if e.returncode != 0:
+        sys.exit(e.returncode)
 
     # Code coverage
-    subprocess.run(["coverage", "run", "-m", "--source=" + _MODULE, "pytest"], cwd=basedir)
-    subprocess.run(["coverage", "html"], cwd=basedir)
+    e = subprocess.run(["coverage", "run", "-m", "--source=" + _MODULE, "pytest"], cwd=basedir)
+    if e.returncode != 0:
+        sys.exit(e.returncode)
+    e = subprocess.run(["coverage", "html"], cwd=basedir)
+    if e.returncode != 0:
+        sys.exit(e.returncode)
 
 
 def pre_commit_hook():
