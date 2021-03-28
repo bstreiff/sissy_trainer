@@ -16,6 +16,7 @@ Other pages (online):
    :caption: Contents:
 
    release_notes
+   events
    api_reference
 
 Indices and tables
