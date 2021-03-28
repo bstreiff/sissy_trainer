@@ -15,6 +15,11 @@ def check():
     if e.returncode != 0:
         sys.exit(e.returncode)
 
+    # Run linter
+    e = subprocess.run(["pylint", _MODULE], cwd=basedir)
+    if e.returncode != 0:
+        sys.exit(e.returncode)
+
     # Update docs
     e = subprocess.run(["make", "html"], cwd=os.path.join(basedir, "docs"))
     if e.returncode != 0:
