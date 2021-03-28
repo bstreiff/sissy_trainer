@@ -12,7 +12,7 @@ from sistrum._enums import (
 )
 
 from sistrum._event import Event, ValueChangeEvent, IndexValueChangeEvent
-
+from sistrum._part_numbers import PartNumber
 from sistrum._resolution import AspectRatio, Resolution
 
 __all__ = [
@@ -29,6 +29,7 @@ __all__ = [
     "Event",
     "ValueChangeEvent",
     "IndexValueChangeEvent",
+    "PartNumber",
 ]
 
 __version__ = "0.1.0"
