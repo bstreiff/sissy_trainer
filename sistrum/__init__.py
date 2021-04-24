@@ -1,5 +1,7 @@
 from __future__ import absolute_import
 
+from sistrum._device import ExtronDevice
+
 from sistrum._enums import (
     AspectMode,
     ExecutiveMode,
@@ -16,6 +18,7 @@ from sistrum._part_numbers import PartNumber
 from sistrum._resolution import AspectRatio, Resolution
 
 __all__ = [
+    "ExtronDevice",
     "AspectRatio",
     "Resolution",
     "AspectMode",

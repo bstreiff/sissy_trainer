@@ -7,3 +7,4 @@ API Reference
 
    source/base
    source/exceptions
+   source/device_dvs304
