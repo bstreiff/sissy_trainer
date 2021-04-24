@@ -8,3 +8,4 @@ API Reference
    source/base
    source/exceptions
    source/device_dvs304
+   source/device_mps112

@@ -1,5 +1,6 @@
 import serial.threaded  # type: ignore
 from sistrum.device_dvs304 import ExtronDVS304Protocol
+from sistrum.device_mps112 import ExtronMPS112Protocol
 from sistrum._protocol import ExtronProtocol
 from sistrum._part_numbers import PartNumber
 
@@ -13,6 +14,8 @@ _PROTOCOL_INDEX = {
     PartNumber.EXTRON_DVS_304_DVI_A: ExtronDVS304Protocol,
     PartNumber.EXTRON_DVS_304_DVI_D: ExtronDVS304Protocol,
     PartNumber.EXTRON_DVS_304_DVI_AD: ExtronDVS304Protocol,
+    PartNumber.EXTRON_MPS_112: ExtronMPS112Protocol,
+    PartNumber.EXTRON_MPS_112CS: ExtronMPS112Protocol,
 }
 
 
