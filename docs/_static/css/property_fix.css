@@ -1,0 +1,12 @@
+/*
+ * sphinx_rtd_theme does weird things with properties now that sphinx 4.x has a proper "property"
+ * object type; we want them styled like attributes, so this requires overridding this bit of css,
+ * which is supposedly something that was added for Sphinx 2.x:
+ * https://github.com/readthedocs/sphinx_rtd_theme/commit/b3e894b70fa702246b2e99f848d937ad5296baae
+ */
+
+html.writer-html4 .rst-content dl:not(.docutils) .property,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple) .property {
+ display:inline;
+ padding-right:0px
+}

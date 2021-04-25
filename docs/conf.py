@@ -59,6 +59,7 @@ html_static_path = ['_static']
 
 html_css_files = [
     'css/test_patterns.css',
+    'css/property_fix.css',
 ]
 
 intersphinx_mapping = {
