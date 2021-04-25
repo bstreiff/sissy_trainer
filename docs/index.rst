@@ -16,6 +16,7 @@ Other pages (online):
    :caption: Contents:
 
    release_notes
+   connectivity
    events
    api_reference
 
